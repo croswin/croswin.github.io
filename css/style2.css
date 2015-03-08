@@ -1,0 +1,400 @@
+
+/*Template Name: Tesoro - Super Simple Landing Page Template
+Theme URL: http://themeforest.net/user/DSA79/
+Description: Tesoro - Super Simple Landing Page Template
+Author: DSA79
+Author URL: http://themeforest.net/user/DSA79
+Version: 1.0.0
+Website: www.dsathemes.com
+Tags: responsive, html5 template, simple, landing page, business, corporate, project, bootstrap3
+*/
+
+
+
+/* ------------------------------------------ */
+/*             TABLE OF CONTENTS
+/* ------------------------------------------ */
+
+/*   01 - General & Basic Styles   */
+/*   02 - Header & Navigation      */
+/*   03 - Cover			           */
+/*   04 - Features                 */
+/*   05 - Team                     */
+/*   06 - Pricing Tables           */
+/*   07 - Testimonials Rotator	   */
+/*   08 - FAQs			 	  	   */
+/*   09 - Contacts		 	  	   */
+/*   10 - Newsletter	 	  	   */
+/*   11 - Footer		 	  	   */
+/*   12 - Scroll to Top	 	  	   */
+
+
+
+/* ==========================================================================
+   01. GENERAL & BASIC STYLES
+   ========================================================================== */ 
+ 
+#content-wrapper {
+	margin-top: 60px;
+} 
+ 
+.theme-color {
+	color: #EB5840;
+}
+
+/*------------------------------------------*/
+/*	 Page Preload
+/*------------------------------------------*/
+
+#preOverlay {
+	background-color: #EB5840;
+}
+
+#jpreLoader {
+	width: 300px;
+	height: 100px;
+	position: relative;
+	z-index: 1;
+	margin:0 auto;
+}
+#jpreBar {
+	position:fixed;
+	width:100%;
+	height:100% !important;
+	top:0;
+	left:0;
+}
+#jprePercentage {
+	color:#ddd;
+	font-family: 'Lato', sans-serif;
+	font-size: 70px;
+	font-weight: 600;
+	text-shadow: 0px 10px 10px rgba(0, 0, 0, 0.4);
+	text-align:center;	
+	letter-spacing:-2px;
+	z-index:2;
+	margin: 0;
+}
+  
+/*------------------------------------------*/
+/*	 Headers
+/*------------------------------------------*/
+
+h1, h2, h3, h4, h5, h6 {
+	margin-top: 0; 
+	margin-bottom: 10px;
+}
+
+/*------------------------------------------*/
+/*	 Link Setting
+/*------------------------------------------*/
+
+a {
+	text-decoration: none;
+	-webkit-transition: all 250ms ease-in-out;
+	-moz-transition: all 250ms ease-in-out;
+	-o-transition: all 250ms ease-in-out;
+	-ms-transition: all 250ms ease-in-out;
+	transition: all 250ms ease-in-out;
+}
+
+a:hover {
+	color: #444;
+	text-decoration: none;
+}
+
+a:focus {
+	color: #f8f8f8;
+	outline: none;
+	border: none;
+	text-decoration: none;
+} 
+
+/*------------------------------------------*/
+/*	 Lists
+/*------------------------------------------*/
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+/*------------------------------------------*/
+/*	 Section Titlebar
+/*------------------------------------------*/
+
+.titlebar {
+	margin-bottom: 50px;
+	text-align: center;
+}
+
+.titlebar h1 {
+	color: #444;
+	font-size: 44px;
+	font-weight: 900;
+	text-transform: uppercase;
+}
+
+.titlebar p {
+	color: #666;
+	font-size: 20px;
+	font-family: 'Lato', sans-serif;
+	font-weight: 700;
+	padding: 0 10%;
+}
+
+/*------------------------------------------*/
+/*	 Black Button
+/*------------------------------------------*/
+
+.btn-black {
+	background-color: #444;
+	border: 1px solid #333;
+	color: #fff;
+	font-size: 16px;
+	font-weight: 700; 
+	padding: 10px 20px;
+	box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.2) inset, 0px 1px 2px rgba(0, 0, 0, 0.2);
+	-webkit-transition: all 200ms ease-in-out;
+	-moz-transition: all 200ms ease-in-out;
+	-o-transition: all 200ms ease-in-out;
+	-ms-transition: all 200ms ease-in-out;
+	transition: all 200ms ease-in-out;
+}
+
+.btn-black:hover {
+	background-color: #555;
+	box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.2) inset, 0px 1px 2px rgba(0, 0, 0, 0.2);
+	color: #fff;
+}
+
+.btn:focus {
+	color: #f8f8f8;
+	outline: none;
+	text-decoration: none;
+}
+
+
+
+/* ==========================================================================
+   02. HEADER & NAVIGATION
+   ========================================================================== */ 
+
+/*------------------------------------------*/
+/*	 Logo Image    
+/*------------------------------------------*/
+
+.navbar-brand {
+	padding: 15px;
+}   
+      
+/*------------------------------------------*/
+/*	 Navigation Menu    
+/*------------------------------------------*/
+
+.navbar {	
+	background-color: #f0f0f0;
+	border-bottom: 1px solid #ddd;
+}
+
+.navbar-nav > li > a {
+	color: #666;	
+    display: block;
+	padding: 0 15px;
+	font-size: 16px;
+	font-family: 'Lato', sans-serif;
+	font-weight: 700;
+	line-height: 57px;
+	border-bottom: 3px solid transparent;
+	-webkit-transition: all 250ms ease-in-out;
+	-moz-transition: all 250ms ease-in-out;
+	-o-transition: all 250ms ease-in-out;
+	-ms-transition: all 250ms ease-in-out;
+	transition: all 250ms ease-in-out;
+}
+
+.navbar-nav > li > a:hover,
+.navbar-nav > li > a.selected-nav {
+	background: none;
+	border-bottom: 3px solid #EB5840;
+}
+
+/*------------------------------------------*/
+/*	 Responsive Menu    
+/*------------------------------------------*/
+
+.navbar-toggle {
+    position: relative;
+    float: right;
+    padding: 10px;
+	margin: 12px 30px 12px 0;
+    background-color: none;
+	border: 2px solid #888;
+}
+
+.navbar-toggle .icon-bar {
+	background-color: #888;
+	height: 2px;
+}
+
+
+
+/* ==========================================================================
+   03. COVER
+   ========================================================================== */ 
+   
+#cover {
+	background: url(../img/thumbs/cover_bkg.jpg) center bottom no-repeat;
+	font-size: 18px;
+}
+
+/*------------------------------------------*/
+/*	  Cover Description
+/*------------------------------------------*/
+
+#cover_description {
+	margin: 150px 0;
+	opacity: 0;
+}
+
+#cover_description h2 {
+	font-size: 50px;
+	font-weight:900;
+}
+
+#cover_description h1 {
+	font-size: 70px;
+	line-height: 60px;
+	text-transform:uppercase;
+	font-weight:900;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+/*------------------------------------------*/
+/*	  Cover Image
+/*------------------------------------------*/
+
+#cover_image {
+	opacity: 0;
+}
+
+#cover_image .img-responsive { 
+	display: inline-block; 
+}
+
+/*
+
+
+
+/* ==========================================================================
+   05. TEAM
+   ========================================================================== */
+   
+#team {
+	padding-top: 80px;
+	padding-bottom: 30px;
+	border-bottom: 1px solid #ddd;
+}
+
+.team-member {
+	text-align: center;
+	margin-bottom: 50px;
+	-webkit-transition: all 250ms ease-in-out;
+	-moz-transition: all 250ms ease-in-out;
+	-o-transition: all 250ms ease-in-out;
+	-ms-transition: all 250ms ease-in-out;
+	transition: all 250ms ease-in-out;
+}
+
+/*------------------------------------------*/
+/*	  Team Member Photo
+/*------------------------------------------*/
+
+.img-block { 
+	margin: 10px 10px 20px 10px;
+}
+
+.img-block img {
+	-webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+	box-shadow: 0px 0px 0px 0 rgba(10, 10, 10, 0.15);
+	opacity: 1;
+	-webkit-transition: all 250ms ease-in-out;
+	-moz-transition: all 250ms ease-in-out;
+	-o-transition: all 250ms ease-in-out;
+	-ms-transition: all 250ms ease-in-out;
+	transition: all 250ms ease-in-out;
+}
+
+/*------------------------------------------*/
+/*	  Team Member Photo Hover
+/*------------------------------------------*/
+
+.team-member:hover .img-block img {
+	box-shadow: 0px 0px 0px 10px rgba(10, 10, 10, 0.15);
+	opacity: .85;
+}
+
+/*------------------------------------------*/
+/*	  Team Member Meta
+/*------------------------------------------*/
+
+.team-img-meta h4 {
+	font-weight: 600;
+	text-transform: uppercase;
+	margin-bottom: 5px;
+}
+
+.team-img-meta p {
+	font-size: 16px;
+	font-weight: 600;
+	margin-bottom: 5px;
+	padding: 0 15%;
+}
+
+p.member-info {
+	font-size: 14px;
+	line-height: 20px;
+	margin-bottom: 20px;
+	padding: 0 5%;
+}
+
+/*------------------------------------------*/
+/*	  Team Member Social Icons 
+/*------------------------------------------*/
+
+.team-member-socials {
+	text-align: right;
+	display: inline-block;
+	margin: 0 auto;
+}
+
+.team-member-socials li {
+	float: left;
+    display: inline-block !important;
+    vertical-align: top;
+    width: auto !important;
+    clear: none !important;
+}
+
+.page_social {
+    width: 40px;
+    height: 40px;
+	color: #aaa;
+	font-size: 14px; 
+    text-align: center;
+    line-height: 40px;
+    display: block;
+    text-decoration: none;
+	margin: 0 3px 5px;
+	-webkit-transition: all 250ms ease-in-out;
+	-moz-transition: all 250ms ease-in-out;
+	-o-transition: all 250ms ease-in-out;
+	-ms-transition: all 250ms ease-in-out;
+	transition: all 250ms ease-in-out;
+}
+
+
